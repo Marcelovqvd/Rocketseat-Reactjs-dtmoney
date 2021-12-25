@@ -5,6 +5,9 @@ import { GlobalStyle } from "./styles/global"
 import { useState } from "react"
 import Modal from 'react-modal'
 
+//lib pede p passar este objeto por questões de acessibilidade
+Modal.setAppElement('#root')
+
 export function App() {
   const [isNewTransactionModal, setIsNewTransactionModal] = useState(false)
 
