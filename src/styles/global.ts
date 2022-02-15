@@ -2,14 +2,17 @@ import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
   :root {
-    --red: #e52e4d;
-    --blue: #5429cc;
-    --blue-light: #6933ff;
-    --green: #33cc95;
-    --shape: #ffffff;
-    --text-title: #363f5f;
-    --text-body: #969cb3;
     --background: #f0f2f5;
+    --red: #E52E4d;
+    --green: #33CC95;
+    --blue: #5429CC;
+
+    --blue-light: #6933FF;
+
+    --text-title: #363F5F;
+    --text-body: #969CB3;
+
+    --shape: #ffffff;
   }
    
   * {
@@ -19,7 +22,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   html {
-    @media(max-width: 1080px) {
+    @media (max-width: 1080px) {
       font-size: 93.75%;
     }
     @media(max-width: 720px) {
@@ -80,6 +83,7 @@ export const GlobalStyle = createGlobalStyle`
     border: 0;
     background: transparent;
     transition: filter 0.2s;
+    
     &:hover {
       filter: brightness(0.8);
     }
