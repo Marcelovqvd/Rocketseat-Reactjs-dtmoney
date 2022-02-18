@@ -21,7 +21,7 @@ export function App() {
   }
 
   return (
-    <TransactionsProvider>    
+    <TransactionsProvider>
       <Header onOpenNewTransactionModal={handleOpenNewTransactionModal} />
       <Dashboard />  
       <NewTransactionModal 
