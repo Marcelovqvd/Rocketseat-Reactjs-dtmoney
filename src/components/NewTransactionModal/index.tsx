@@ -5,7 +5,6 @@ import closeImg from '../../assets/close.svg'
 
 import { Container, TransactionTypeContainer, RadioBox } from './styles'
 import { FormEvent, useContext, useState } from 'react'
-import { api } from '../../services/api'
 import { TransactionsContext } from '../../TransactionsContext'
 
 interface NewTransactionModalProps {
@@ -28,6 +27,12 @@ export function NewTransactionModal({isOpen, onRequestClose}: NewTransactionModa
       category,
       type
     })
+
+    setTitle('')
+    setAmount(0)
+    setCategory('')
+    setType('deposit')
+    onRequestClose()
   }
 
   return (
